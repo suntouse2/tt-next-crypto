@@ -8,21 +8,36 @@ export default function Footer() {
 		<footer className={styles.footer}>
 			<div className={styles.footer_content}>
 				<div className={styles.footer_left}>
-					<Image src='logo2.svg' width={197} height={35}></Image>
+					<Image src='logo2.svg' width={197} height={35} alt='logo'></Image>
 					<ul className={styles.footer_socials}>
 						<li className={styles.social}>
 							<a href='#'>
-								<Image src='tg.svg' width={30} height={30}></Image>
+								<Image
+									src='tg.svg'
+									width={30}
+									height={30}
+									alt='telegram icon'
+								></Image>
 							</a>
 						</li>
 						<li className={styles.social}>
 							<a href='#'>
-								<Image src='fb.svg' width={30} height={30}></Image>
+								<Image
+									src='fb.svg'
+									alt='facebook icon'
+									width={30}
+									height={30}
+								></Image>
 							</a>
 						</li>
 						<li className={styles.social}>
 							<a href='#'>
-								<Image src='tw.svg' width={30} height={30}></Image>
+								<Image
+									src='tw.svg'
+									alt='twitter icon'
+									width={30}
+									height={30}
+								></Image>
 							</a>
 						</li>
 					</ul>

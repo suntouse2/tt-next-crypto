@@ -26,13 +26,12 @@ export default function Banner() {
 				<div className={styles.imgDiv}>
 					<div className={styles.light}></div>
 					<Image
-						priority='false'
 						src='/banner.svg'
-						quality={100}
 						className={styles.banner_img}
 						alt='logo'
 						width={640}
 						height={283}
+						priority
 					></Image>
 					<Image
 						priority='false'

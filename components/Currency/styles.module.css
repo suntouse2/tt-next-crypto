@@ -49,9 +49,7 @@
 }
 .td_div span {
 	color: #525a71;
-
 	text-align: center;
-	font-family: Inter;
 	font-size: 16px;
 	font-style: normal;
 	font-weight: 400;
@@ -68,7 +66,6 @@
 	text-align: left;
 	padding: 24px;
 	color: #6d799c;
-	font-family: Inter;
 	font-size: 16px;
 	font-style: normal;
 	font-weight: 500;
@@ -85,7 +82,6 @@
 	padding: 24px;
 	color: #c7e1ff;
 	text-align: center;
-	font-family: Inter;
 	font-size: 20px;
 	font-style: normal;
 	font-weight: 400;
@@ -97,24 +93,6 @@
 .tr:last-child {
 	border-bottom: none;
 }
-.tr_shine {
-	height: 83px;
-	border-bottom: 1px solid #212b3d;
-	border-radius: 16px;
-}
-.tr_shine:last-child {
-	border-bottom: none;
-}
-.tr_shine::after {
-	content: '';
-	position: absolute;
-	width: 100%;
-	left: 0;
-	height: 100%;
-	background: linear-gradient(to right, #27292b, #0f151e, #0f151e);
-	background-size: 200% 100%;
-	animation: gradientAnimation 6s ease infinite;
-}
 .trade_button {
 	padding-left: 16px;
 	padding-right: 16px;
@@ -122,8 +100,6 @@
 	padding-bottom: 6px;
 	background: transparent;
 	color: #2fbdfc;
-
-	font-family: Inter;
 	font-size: 18px;
 	font-style: normal;
 	font-weight: 500;
@@ -150,7 +126,6 @@
 	border-top: 1px solid #394249;
 	background: radial-gradient(100.04% 100% at 50% 0%, #26314e 0%, #1e253c 100%);
 	color: #cee7ff;
-	font-family: Inter;
 	font-size: 18px;
 	font-style: normal;
 	font-weight: 500;
@@ -163,7 +138,6 @@
 	color: #c7e1ff;
 
 	text-align: center;
-	font-family: Inter;
 	font-size: 16px;
 	font-style: normal;
 	font-weight: 400;
@@ -171,7 +145,6 @@
 	letter-spacing: -0.5px;
 }
 .percent {
-	font-family: Inter;
 	font-size: 16px;
 	font-style: normal;
 	font-weight: 400;
@@ -184,12 +157,47 @@
 .plus {
 	color: #58f0a7;
 }
-@keyframes gradientAnimation {
+.tr_loading {
+	height: 76px;
+	border-bottom: 1px solid #212b3d;
+}
+.tr_loading td {
+	position: relative;
+}
+.tr_loading:last-child {
+	border-bottom: none;
+}
+.shine_container {
+	position: absolute;
+	top: 0;
+	width: 1600px;
+	height: 76px;
+	overflow: hidden;
+}
+.shine_light {
+	width: 400px;
+	rotate: 30deg;
+	height: 100%;
+	display: inline-block;
+	position: absolute;
+	background: #273242;
+	filter: blur(30px);
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
+	animation-name: placeholderShimmer;
+	animation-timing-function: ease-in-out;
+	left: 0;
+	opacity: 0.5;
+}
+@keyframes placeholderShimmer {
 	0% {
-		background-position: 0% 50%;
+		left: -20%;
+		opacity: 0.5;
 	}
-	50% {
-		background-position: 100% 50%;
+	100% {
+		left: 100%;
+		opacity: 1;
 	}
 }
 @media (width <= 1280px) {

@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import styles from './styles.module.css'
+import Row from '@/components/Currency/elements/Row'
 
 export default function Currency() {
 	const [coins, setCoins] = useState([])
@@ -43,63 +44,18 @@ export default function Currency() {
 						<th className={styles.th}></th>
 					</tr>
 					{isLoaded ? (
-						coins.map((coin, index) => (
-							<tr className={styles.tr} key={index}>
-								<td className={styles.td}>
-									<div className={styles.td_div}>
-										<img
-											src={coin.name + '.png'}
-											alt='icon'
-											width={36}
-											height={36}
-										></img>
-										{coin.name}
-										<span>{coin.symbol}</span>
-									</div>
-								</td>
-								<td className={styles.td}>
-									<span className={styles.dollar}>$ </span>
-									{Number(coin.priceUsd).toFixed(2)}
-								</td>
-								<td className={styles.td}>
-									<span
-										className={
-											coin.changePercent24Hr >= 0 ? styles.plus : styles.minus
-										}
-									>
-										{Number(coin.changePercent24Hr).toFixed(2)}
-										<span className={styles.percent}> %</span>
-									</span>
-									{/* {Number(coin.changePercent24Hr).toFixed(2)} */}
-								</td>
-								<td className={styles.td}>
-									{'$' + Number(coin.volumeUsd24Hr).toFixed(0)}
-								</td>
-								<td className={styles.td}>
-									<button className={styles.trade_button}>Trade</button>
-								</td>
-							</tr>
-						))
+						coins.map((coin, index) => <Row coin={coin} key={index}></Row>)
 					) : (
 						<>
-							<tr className={styles.tr_shine}>
-								<td></td>
-							</tr>
-							<tr className={styles.tr_shine}>
-								<td></td>
-							</tr>
-							<tr className={styles.tr_shine}>
-								<td></td>
-							</tr>
-							<tr className={styles.tr_shine}>
-								<td></td>
-							</tr>
-							<tr className={styles.tr_shine}>
-								<td></td>
-							</tr>
-							<tr className={styles.tr_shine}>
-								<td></td>
-							</tr>
+							{Array.from({ length: 6 }, (_, index) => (
+								<tr key={index} className={styles.tr_loading}>
+									<td>
+										<div className={styles.shine_container}>
+											<div className={styles.shine_light}></div>
+										</div>
+									</td>
+								</tr>
+							))}
 						</>
 					)}
 				</tbody>

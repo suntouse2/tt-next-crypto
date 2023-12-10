@@ -32,7 +32,6 @@
 }
 .card_title {
 	color: #d5eaff;
-	font-family: Inter;
 	font-size: 20px;
 	font-weight: 469;
 	line-height: 145.023%; /* 29.005px */
@@ -40,7 +39,6 @@
 }
 .card_descp {
 	color: #464e62;
-	font-family: Inter;
 	font-size: 18px;
 	font-weight: 400;
 	line-height: 160.023%; /* 28.804px */

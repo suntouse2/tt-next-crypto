@@ -1,17 +1,21 @@
 import Header from '@/components/Header/Header'
-import Currency from '@/components/Currency/Currency'
-import Banner from '@/components/Banner/Banner'
-import Benefits from '@/components/Benefits/Benefits'
-import Partners from '@/components/Partners/Partners'
-import Email from '@/components/Email/Email'
 import Footer from '@/components/Footer/Footer'
+import styles from './not-found.module.css'
+import Image from 'next/image'
 
 export default function Home() {
 	return (
 		<>
-			<div className='not-found'>
+			<div className={styles.not_found}>
 				<Header></Header>
-				<div className='not-found_text'>
+				<div className={styles.not_found_content}>
+					<Image
+						src='/cat.png'
+						alt='cat'
+						width={349}
+						height={249}
+						priority
+					></Image>
 					<h1>Your page not found. Sorry:(</h1>
 				</div>
 				<Footer></Footer>

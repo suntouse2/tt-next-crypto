@@ -7,7 +7,7 @@ import MobileHeader from '@/components/MobileHeader/MobileHeader'
 export default function Header() {
 	return (
 		<header className={styles.header}>
-			<div className='container'>
+			<div className={styles.header_container}>
 				<div className={styles.header_left}>
 					<Image
 						priority='false'

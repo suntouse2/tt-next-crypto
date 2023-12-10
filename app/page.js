@@ -10,11 +10,13 @@ export default function Home() {
 	return (
 		<>
 			<Header></Header>
-			<Banner></Banner>
-			<Currency></Currency>
-			<Partners></Partners>
-			<Benefits></Benefits>
-			<Email></Email>
+			<main>
+				<Banner></Banner>
+				<Currency></Currency>
+				<Partners></Partners>
+				<Benefits></Benefits>
+				<Email></Email>
+			</main>
 			<Footer></Footer>
 		</>
 	)

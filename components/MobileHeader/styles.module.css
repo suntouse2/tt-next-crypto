@@ -3,7 +3,7 @@
 	z-index: 99;
 	top: 61px;
 	left: 0;
-	width: 100%;
+	width: 100vw;
 	height: 100vh;
 	padding-top: 28px;
 	padding-bottom: 28px;
@@ -16,7 +16,6 @@
 .mobile_header_active {
 	transform: translateX(0);
 }
-
 .mobile_nav {
 	display: flex;
 	flex-direction: column;

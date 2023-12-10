@@ -1,6 +1,6 @@
+import { Inter } from 'next/font/google'
 import './global.css'
-import { SpeedInsights } from '@vercel/speed-insights/next'
-
+const inter = Inter({ subsets: ['latin'], variable: '--var-inter' })
 export const metadata = {
 	title: 'BITLIST - Decentralized crypto platform',
 	description: 'Buy, trade and store cryptocurrencies',
@@ -16,13 +16,13 @@ export const metadata = {
 	icons: {
 		apple: '/apple-icon.png',
 	},
-	category: 'technology',
+	category: 'Finance',
 }
 
 export default function RootLayout({ children }) {
 	return (
 		<html lang='en'>
-			<body>{children}</body>
+			<body className={inter.variable}>{children}</body>
 		</html>
 	)
 }
