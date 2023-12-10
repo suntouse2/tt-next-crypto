@@ -16,12 +16,12 @@ export default function Footer() {
 							</a>
 						</li>
 						<li className={styles.social}>
-							<a>
+							<a href='#'>
 								<Image src='fb.svg' width={30} height={30}></Image>
 							</a>
 						</li>
 						<li className={styles.social}>
-							<a>
+							<a href='#'>
 								<Image src='tw.svg' width={30} height={30}></Image>
 							</a>
 						</li>
