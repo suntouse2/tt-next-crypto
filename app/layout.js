@@ -1,4 +1,5 @@
 import './global.css'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 
 export const metadata = {
 	title: 'BITLIST - Decentralized crypto platform',
