@@ -1,0 +1,35 @@
+.label {
+	position: relative;
+}
+.icon {
+	position: absolute;
+	z-index: 2;
+	left: 16px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.input {
+	border-radius: 6px;
+	border: none;
+	outline: none;
+	padding-left: calc(16px + 20px + 8px);
+	padding-right: 24px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #b2bee2;
+	border-top: 1px solid #3d4865;
+	outline: none;
+	background: radial-gradient(100.04% 100% at 50% 0%, #26314e 0%, #252b3d 100%);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	width: 100%;
+	max-width: 400px;
+	box-sizing: border-box;
+}
+@media (width <= 460px) {
+	.input {
+		font-size: 16px;
+	}
+}

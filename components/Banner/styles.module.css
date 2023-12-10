@@ -1,0 +1,133 @@
+.banner {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 1;
+	background-color: #08090b;
+	padding-left: 160px;
+	padding-right: 160px;
+	padding-top: 45px;
+	padding-bottom: 45px;
+	border-bottom: 1px solid #252c41;
+}
+.banner_input {
+	position: absolute;
+	max-width: 420px;
+	bottom: -10px;
+	width: 100%;
+	z-index: 5;
+}
+.banner_input button {
+	position: absolute;
+	right: 20px;
+}
+.banner_title {
+	color: #d5eaff;
+	font-family: Inter;
+	z-index: 1;
+	font-size: 72px;
+	font-style: normal;
+	font-weight: 465;
+	line-height: 80px; /* 111.111% */
+}
+
+.imgDiv {
+	position: relative;
+}
+.line1 {
+	position: absolute;
+	right: 150px;
+	top: -70px;
+	z-index: -4;
+}
+.line2 {
+	position: absolute;
+	left: 220px;
+	bottom: -44px;
+	z-index: -4;
+}
+.light {
+	width: 780px;
+	height: 180px;
+	position: absolute;
+	left: -100px;
+	flex-shrink: 0;
+	border-radius: 780px;
+	background: rgba(30, 160, 255, 0.32);
+	filter: blur(200px);
+	z-index: -1;
+}
+@media (width <= 1760px) {
+	.banner {
+	}
+}
+@media (width <= 1590px) {
+	.banner_title {
+		text-align: center;
+	}
+	.banner_text {
+		display: flex;
+		flex-direction: column;
+		z-index: 1;
+		align-items: center;
+	}
+
+	.line2 {
+		position: absolute;
+		bottom: -44px;
+	}
+	.banner {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 45px;
+	}
+}
+@media (width <= 800px) {
+	.banner_title {
+		font-size: 50px;
+		line-height: 50px; /* 111.111% */
+		margin-top: 20px;
+	}
+	.banner_img {
+		width: 430px;
+		height: 190px;
+	}
+}
+@media (width <= 490px) {
+	.banner_title {
+		font-size: 30px;
+		line-height: 20px; /* 111.111% */
+		margin-top: 20px;
+	}
+	.banner_input {
+		max-width: 100%;
+		padding-left: 20px;
+		padding-right: 20px;
+		margin: 0 auto;
+	}
+	.banner_text img {
+		width: 300px;
+		height: 23px;
+	}
+	.banner_img {
+		width: 351px;
+		height: 155px;
+	}
+}
+@media (width <= 385px) {
+	.banner_title {
+		font-size: 30px;
+		line-height: 20px; /* 111.111% */
+		margin-top: 20px;
+	}
+	.banner_text img {
+		width: 300px;
+		height: 23px;
+	}
+	.banner_img {
+		width: 322px;
+		height: 142px;
+	}
+}

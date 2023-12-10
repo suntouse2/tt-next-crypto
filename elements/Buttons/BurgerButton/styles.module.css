@@ -1,0 +1,25 @@
+.burger_button {
+	display: none;
+}
+.burger_button span {
+	width: 30px;
+	height: 2px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #5cccfe;
+	transition: all 0.5s;
+}
+.burger_button span:nth-of-type(2) {
+	top: calc(50% - 5px);
+}
+.burger_button span:nth-of-type(3) {
+	top: calc(50% + 5px);
+}
+@media (width < 1280px) {
+	.burger_button {
+		display: block;
+		width: 30px;
+	}
+}

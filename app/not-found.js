@@ -9,13 +9,13 @@ import Footer from '@/components/Footer/Footer'
 export default function Home() {
 	return (
 		<>
-			<Header></Header>
-			<Banner></Banner>
-			<Currency></Currency>
-			<Partners></Partners>
-			<Benefits></Benefits>
-			<Email></Email>
-			<Footer></Footer>
+			<div className='not-found'>
+				<Header></Header>
+				<div className='not-found_text'>
+					<h1>Your page not found. Sorry:(</h1>
+				</div>
+				<Footer></Footer>
+			</div>
 		</>
 	)
 }

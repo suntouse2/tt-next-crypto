@@ -1,0 +1,261 @@
+.currency {
+	background: #0b0f15;
+	padding-top: 101px;
+	padding-bottom: 101px;
+	padding-left: 20px;
+	padding-right: 20px;
+	z-index: -1;
+	border-bottom: 1px solid #252c41;
+}
+.table {
+	background: radial-gradient(
+		100.04% 100% at 50% 0%,
+		#26314e 0%,
+		#131820 0.01%,
+		#0f151e 100%
+	);
+	width: 100%;
+	max-width: 1600px;
+	margin: 0 auto;
+	border: none;
+	border-collapse: collapse;
+	border-radius: 16px;
+}
+.tbody {
+	background: radial-gradient(
+		100.04% 100% at 50% 0%,
+		#26314e 0%,
+		#131820 0.01%,
+		#0f151e 100%
+	);
+	border-radius: 16px;
+	position: relative;
+	width: 100%;
+}
+.tr {
+	background: radial-gradient(
+		100.04% 100% at 50% 0%,
+		#26314e 0%,
+		#131820 0.01%,
+		#0f151e 100%
+	);
+	border-bottom: 1px solid #212b3d;
+	border-radius: 16px;
+}
+.td_div {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+.td_div span {
+	color: #525a71;
+
+	text-align: center;
+	font-family: Inter;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	letter-spacing: -0.25px;
+}
+.th {
+	background: radial-gradient(
+		100.04% 100% at 50% 0%,
+		#26314e 0%,
+		#131820 0.01%,
+		#0f151e 100%
+	);
+	text-align: left;
+	padding: 24px;
+	color: #6d799c;
+	font-family: Inter;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	border-radius: 16px;
+}
+.td {
+	background: radial-gradient(
+		100.04% 100% at 50% 0%,
+		#26314e 0%,
+		#131820 0.01%,
+		#0f151e 100%
+	);
+	padding: 24px;
+	color: #c7e1ff;
+	text-align: center;
+	font-family: Inter;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 17px; /* 85% */
+	letter-spacing: -0.5px;
+	text-align: left;
+	border-radius: 16px;
+}
+.tr:last-child {
+	border-bottom: none;
+}
+.tr_shine {
+	height: 83px;
+	border-bottom: 1px solid #212b3d;
+	border-radius: 16px;
+}
+.tr_shine:last-child {
+	border-bottom: none;
+}
+.tr_shine::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	left: 0;
+	height: 100%;
+	background: linear-gradient(to right, #27292b, #0f151e, #0f151e);
+	background-size: 200% 100%;
+	animation: gradientAnimation 6s ease infinite;
+}
+.trade_button {
+	padding-left: 16px;
+	padding-right: 16px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	background: transparent;
+	color: #2fbdfc;
+
+	font-family: Inter;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	border-radius: 6px;
+	border: 1px solid #2fbdfc;
+	transition: 0.2s;
+}
+.trade_button:hover {
+	color: white;
+	background-color: #2fbdfc;
+}
+.table_button {
+	width: 100%;
+	max-width: 1600px;
+	margin: 0 auto;
+	margin-top: 16px;
+	display: flex;
+	padding: 10px 24px;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	border-radius: 8px;
+	border-top: 1px solid #394249;
+	background: radial-gradient(100.04% 100% at 50% 0%, #26314e 0%, #1e253c 100%);
+	color: #cee7ff;
+	font-family: Inter;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+.table_button:hover {
+	opacity: 0.8;
+}
+.dollar {
+	color: #c7e1ff;
+
+	text-align: center;
+	font-family: Inter;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 17px; /* 106.25% */
+	letter-spacing: -0.5px;
+}
+.percent {
+	font-family: Inter;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 17px;
+	letter-spacing: -0.5px;
+}
+.minus {
+	color: #f94b55;
+}
+.plus {
+	color: #58f0a7;
+}
+@keyframes gradientAnimation {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+}
+@media (width <= 1280px) {
+	.th:nth-child(4) {
+		display: none;
+	}
+	.td:nth-child(4) {
+		display: none;
+	}
+}
+@media (width <= 974px) {
+	.td {
+		font-size: 16px;
+	}
+	.trade_button {
+		font-size: 16px;
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-top: 6px;
+		padding-bottom: 6px;
+	}
+	.td {
+	}
+	.td_div span {
+		display: none;
+	}
+}
+@media (width <= 690px) {
+	.td {
+		font-size: 16px;
+	}
+	.trade_button {
+		font-size: 12px;
+	}
+	.td_div span {
+		display: none;
+	}
+	.td img {
+		max-width: 20px;
+		max-height: 20px;
+	}
+}
+@media (width <= 565px) {
+	.td:last-child {
+		display: none;
+	}
+	.th:last-child {
+		display: none;
+	}
+}
+@media (width <= 445px) {
+	.td {
+		font-size: 14px;
+	}
+}
+@media (width <= 430px) {
+	.currency {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.th {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.td {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
