@@ -7,7 +7,7 @@ export default function Input(props) {
 	switch (props.type) {
 		case 'search':
 			icon = 'search.svg'
-			type = 'search'
+			type = 'text'
 			break
 		case 'mail':
 			icon = 'mail.svg'
