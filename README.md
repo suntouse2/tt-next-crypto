@@ -1,1 +1,1 @@
-https://tt-next-crypto-suntouse2s-projects.vercel.app/
+https://tt-next-crypto.vercel.app/
