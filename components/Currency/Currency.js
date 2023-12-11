@@ -21,7 +21,7 @@ export default function Currency() {
 					coin.id == 'polygon'
 			)
 			setCoins(filtered)
-			//setLoaded(true)
+			setLoaded(true)
 		} catch (error) {
 			console.error('Error on fetching data from api.coincap.io')
 		}
