@@ -1,10 +1,11 @@
 .header {
-	position: relative;
+	position: sticky;
+	top: 0;
 	height: 97px;
 	padding-top: 28px;
 	padding-bottom: 26px;
 	background-color: #08090b;
-	z-index: 99;
+	z-index: 100;
 }
 .header::after {
 	position: absolute;

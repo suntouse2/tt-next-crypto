@@ -10,45 +10,47 @@ export default function Banner() {
 				<Input type='mail' placeholder='Example@gmail.com'></Input>
 				<AuthButton value='Sign in'></AuthButton>
 			</div>
-			<div className={styles.banner_text}>
-				<Image
-					priority='false'
-					src='/banner_subtitle.svg'
-					alt='logo'
-					width={400}
-					height={32}
-				></Image>
-				<h1 className={styles.banner_title}>
-					Buy, trade and store cryptocurrencies
-				</h1>
-			</div>
-			<div className={styles.imgDivContainer}>
-				<div className={styles.imgDiv}>
-					<div className={styles.light}></div>
-					<Image
-						src='/banner.svg'
-						className={styles.banner_img}
-						alt='logo'
-						width={640}
-						height={283}
-						priority
-					></Image>
+			<div className={styles.banner_content}>
+				<div className={styles.banner_text}>
 					<Image
 						priority='false'
-						src='/lines.png'
+						src='/banner_subtitle.svg'
 						alt='logo'
-						width={700}
-						height={200}
-						className={styles.line1}
+						width={400}
+						height={32}
 					></Image>
-					<Image
-						priority='false'
-						src='/lines2.png'
-						alt='logo'
-						width={700}
-						height={200}
-						className={styles.line2}
-					></Image>
+					<h1 className={styles.banner_title}>
+						Buy, trade and store cryptocurrencies
+					</h1>
+				</div>
+				<div className={styles.imgDivContainer}>
+					<div className={styles.imgDiv}>
+						<div className={styles.light}></div>
+						<Image
+							src='/banner.svg'
+							className={styles.banner_img}
+							alt='logo'
+							width={640}
+							height={283}
+							priority
+						></Image>
+						<Image
+							priority='false'
+							src='/lines.png'
+							alt='logo'
+							width={700}
+							height={200}
+							className={styles.line1}
+						></Image>
+						<Image
+							priority='false'
+							src='/lines2.png'
+							alt='logo'
+							width={700}
+							height={200}
+							className={styles.line2}
+						></Image>
+					</div>
 				</div>
 			</div>
 		</section>

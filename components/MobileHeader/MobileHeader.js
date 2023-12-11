@@ -11,11 +11,6 @@ export default function MobileHeader() {
 	const [navState, setNavState] = useState(false)
 
 	const showMobileNav = () => {
-		if (navState) {
-			document.body.classList.remove(styles.overflow_hidden)
-		} else {
-			document.body.classList.add(styles.overflow_hidden)
-		}
 		setNavState((navState) => !navState)
 	}
 	const mobileNavClasses = classNames(styles.mobile_header, {

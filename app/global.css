@@ -42,14 +42,13 @@
 	/* Edge 12 -18 */
 	color: #6d799c;
 }
-
-html,
-body {
-	background-color: #08090b;
-}
 body {
 	overflow-x: hidden;
 }
+body {
+	background-color: #08090b;
+}
+
 * {
 	margin: 0;
 	padding: 0;

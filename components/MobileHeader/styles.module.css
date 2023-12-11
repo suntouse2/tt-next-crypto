@@ -1,8 +1,8 @@
 .mobile_header {
-	position: fixed;
+	position: absolute;
 	z-index: 99;
 	top: 61px;
-	left: 0;
+	left: -200vw;
 	width: 100vw;
 	height: 100vh;
 	padding-top: 28px;
@@ -10,15 +10,14 @@
 	padding-left: 20px;
 	padding-right: 20px;
 	background: #08090b;
-	transform: translateX(-200vw);
-	transition: transform 0.5s;
+	transition: left 0.5s;
 	overflow: hidden;
 }
 .overflow_hidden {
 	overflow: hidden !important;
 }
 .mobile_header_active {
-	transform: translateX(0);
+	left: 0vw;
 }
 .mobile_nav {
 	display: flex;

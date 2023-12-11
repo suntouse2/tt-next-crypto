@@ -20,6 +20,7 @@
 	border: none;
 	border-collapse: collapse;
 	border-radius: 16px;
+	overflow: hidden;
 }
 .tbody {
 	background: radial-gradient(
@@ -136,7 +137,6 @@
 }
 .dollar {
 	color: #c7e1ff;
-
 	text-align: center;
 	font-size: 16px;
 	font-style: normal;
@@ -170,7 +170,8 @@
 .shine_container {
 	position: absolute;
 	top: 0;
-	width: 1600px;
+	max-width: 1600px;
+	width: 100vw;
 	height: 76px;
 	overflow: hidden;
 }
