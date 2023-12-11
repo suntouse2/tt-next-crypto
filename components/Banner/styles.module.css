@@ -103,8 +103,9 @@
 		position: absolute;
 		max-width: 420px;
 		bottom: -10px;
-		left: calc(50% - 210px);
-		width: 100%;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 90%;
 		z-index: 5;
 	}
 }
