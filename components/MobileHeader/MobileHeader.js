@@ -12,9 +12,9 @@ export default function MobileHeader() {
 
 	const showMobileNav = () => {
 		if (navState) {
-			document.body.style.overflowY = 'visible'
+			document.body.classList.remove(styles.overflow_hidden)
 		} else {
-			document.body.style.overflowY = 'hidden'
+			document.body.classList.add(styles.overflow_hidden)
 		}
 		setNavState((navState) => !navState)
 	}

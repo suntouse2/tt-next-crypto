@@ -12,6 +12,10 @@
 	background: #08090b;
 	transform: translateX(-200vw);
 	transition: transform 0.5s;
+	overflow: hidden;
+}
+.overflow_hidden {
+	overflow: hidden !important;
 }
 .mobile_header_active {
 	transform: translateX(0);

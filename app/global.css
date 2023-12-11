@@ -45,8 +45,10 @@
 
 html,
 body {
-	overflow-x: hidden;
 	background-color: #08090b;
+}
+body {
+	overflow-x: hidden;
 }
 * {
 	margin: 0;

@@ -3,9 +3,8 @@
 	height: 97px;
 	padding-top: 28px;
 	padding-bottom: 26px;
-	overflow: hidden;
 	background-color: #08090b;
-	z-index: 1;
+	z-index: 99;
 }
 .header::after {
 	position: absolute;
