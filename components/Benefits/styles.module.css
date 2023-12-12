@@ -21,6 +21,8 @@
 	padding-bottom: 86px;
 	grid-template-columns: repeat(auto-fill, minmax(305px, 1fr));
 	box-sizing: content-box;
+	padding-left: 25px;
+	padding-right: 25px;
 	column-gap: 100px;
 	row-gap: 80px;
 	max-width: 1116px;
