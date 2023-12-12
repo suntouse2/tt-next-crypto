@@ -19,13 +19,11 @@
 	display: grid;
 	padding-top: 88px;
 	padding-bottom: 86px;
-	grid-template-columns: repeat(auto-fill, minmax(307px, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(305px, 1fr));
 	box-sizing: content-box;
-	padding-left: 20px;
-	padding-right: 20px;
 	column-gap: 100px;
 	row-gap: 80px;
-	max-width: 1600px;
+	max-width: 1116px;
 	margin: 0 auto;
 }
 .card {
